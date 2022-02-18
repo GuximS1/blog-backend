@@ -21,8 +21,8 @@ export class BlogsResolver {
     }
 
     @Query(() => [Blog], { name: 'blogs', nullable: 'items' })
-    getAllBlogs(@Args() getBlogsArgs: GetBlogsArgs): Blog[] {
-        return this.blogsService.getAllBlogs(getBlogsArgs);
+    getAllBlogs(): Blog[] {
+        return this.blogsService.getAllBlogs();
     }
 
     @Mutation(() => Blog)

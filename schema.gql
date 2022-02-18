@@ -12,7 +12,7 @@ type Blog {
 
 type Query {
   blog(blogId: String!): Blog
-  blogs(blogIds: [String!]!): [Blog]!
+  blogs: [Blog]!
 }
 
 type Mutation {
